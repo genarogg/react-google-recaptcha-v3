@@ -1,0 +1,45 @@
+{
+  "name": "react-google-recaptcha-v3",
+  "version": "1.10.1",
+  "description": "React component for google-recaptcha v3",
+  "module": "dist/react-google-recaptcha-v3.esm.js",
+  "main": "dist/react-google-recaptcha-v3.cjs.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "test": "jest --verbose --env=jsdom",
+    "build": "rollup -c rollup.config.js",
+    "prepublishOnly": "npm run test && npm run build",
+    "build-example": "webpack --config webpack.config.js",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'"
+  },
+  "author": "Duong Tran",
+  "homepage": "https://github.com/t49tran/react-google-recaptcha-v3",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/t49tran/react-google-recaptcha-v3"
+  },
+
+  "dependencies": {
+    "hoist-non-react-statics": "^3.3.2"
+  },
+  "devDependencies": {
+    "@testing-library/react": "11.2.6",
+    "@testing-library/react-hooks": "5.1.1",
+    "@types/hoist-non-react-statics": "3.3.1",
+    "@types/jest": "24.0.13",
+    "@types/node": "14.0.1",
+
+    "awesome-typescript-loader": "5.2.1",
+    "dotenv-webpack": "1.8.0",
+    "jest": "26.6.3",
+    "react": "19",
+    "react-dom": "19",
+
+
+    "source-map-loader": "0.2.4",
+    "ts-jest": "26.5.4"
+ 
+
+  }
+}
